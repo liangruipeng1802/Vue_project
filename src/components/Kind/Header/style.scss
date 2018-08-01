@@ -1,0 +1,12 @@
+@import '@/lib/reset.scss';
+.header{
+    header{
+        @include rect(100%,45px);
+        @include background-color(#f66);
+        @include text-color(#fff);
+        @include font-size(14px);
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+    }
+}

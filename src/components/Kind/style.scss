@@ -1,0 +1,36 @@
+@import '@/lib/reset.scss';
+.kind{
+    @include rect(100%,100%);
+    .k_content{
+        @include rect(100%,100%);
+        .k_main{
+            @include flexbox();
+            @include rect(100%,100%);
+            .kindMenu{
+                @include rect(1rem,auto);
+                @include overflow(auto);
+                border-right:1px solid #ccc;
+                ul{
+                    @include rect(100%,100%);
+                    li{
+                        @include rect(100%,0.5rem);
+                        @include flexbox();
+                        @include flex-direction(column);
+                        @include justify-content();
+                        @include align-items();
+                        border-bottom:1px solid #ccc;
+                        &.active{
+                            @include text-color(#f66);
+                        }
+                    }
+                }
+            }
+            .kindList{
+                @include flex();
+                @include rect(auto,auto);
+                @include overflow(auto);
+            }
+        }
+    }
+}
+

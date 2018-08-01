@@ -1,0 +1,43 @@
+@import '@/lib/reset.scss';
+.detail{
+    @include rect(100%,100%);
+    .d_content{
+        @include rect(100%,100%);
+        .d_main{
+            @include rect(100%,100%);
+            img{
+                @include rect(100%,1.5rem);
+            }
+            p{
+                @include rect(auto,auto);
+                @include margin(0 10px 0 10px);
+                @include text-color(#666);
+                span{
+                    display: inline-block;
+                    @include rect(auto,auto);
+                    @include font-size(16px);
+                    font-weight: 600;
+                    @include text-color(#000);
+                }
+            }
+            .p2{
+                @include font-size(16px);
+                @include text-color(#f66);
+            }
+            .addCart{
+                @include rect(60%,45px);
+                @include background-color(#ff9600);
+                @include font-size(18px);
+                @include text-color(#fff);
+                @include line-height(45px);
+                @include text-align();
+                border-radius: 20px;
+                @include margin(20px auto);
+            }
+        }
+    }
+}
+footer{
+    @include rect(0,0);
+}
+

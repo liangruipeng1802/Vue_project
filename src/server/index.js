@@ -1,0 +1,5 @@
+const baseUrl = 'http://datainfo.duapp.com/shopdata/'
+export const HOME_LIST_URL = baseUrl + 'getGoods.php'
+export const HOME_BANNER_LIST_URL = baseUrl + 'getBanner.php'
+export const DETAIL_LIST_URL = baseUrl+'getGoods.php'
+export const KIND_LIST_URL = baseUrl+'getclass.php'

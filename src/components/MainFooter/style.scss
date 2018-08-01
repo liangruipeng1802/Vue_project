@@ -1,0 +1,28 @@
+@import '@/lib/reset.scss';
+#mainfooter{
+    @include rect(100%,50px);
+    footer{
+        @include rect(100%,50px);
+        @include background-color(#ccc);
+        ul{
+            @include rect(100%,50px);
+            @include flexbox();
+            @include justify-content();
+            @include align-items();
+        }
+        li{
+            @include rect(auto,50px);
+            @include flex();
+            @include flexbox();
+            @include justify-content();
+            @include align-items();
+            @include font-size(14px);
+            @include text-color(#333);
+            &.router-link-active{
+                @include font-size(16px);
+                @include text-color(#f66)
+            }
+        }
+    }
+}
+
